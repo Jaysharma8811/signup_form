@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.form_layout{
+    position: absolute;
+    width: 27rem;
+    height: 36rem;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 1rem  2rem;
+}
+
+/* user image code */
+
+#user_img{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    top:-3rem;
+    left:calc(( 27rem - 6rem)/2);
+}
+/* sign up heading code */
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Baloo 2', cursive;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+    text-shadow: -1px 1px 1px;
+    
+}
+
+/* phone name password etc. icons code  */
+
+.icon
+{
+width: 3rem;
+height: 3rem;
+padding: 0.9rem;
+background-color:#00545d;
+
+text-align: center;
+}
+    
+/* form inputs and icons div code  */
+.forminput
+{
+    display: flex;
+    width: calc(100% - 4rem);
+    margin-left:2.5rem;
+    margin-bottom: 1.5rem ;
+
+}
+/* form inputs code  */
+.inputbox
+{
+    width:calc(100% - 4rem);
+    height: 3rem;
+    padding: 0 1.5rem ;
+    /* border: none; */
+
+
+}
+.inputbox:focus {
+    outline-color:#00545d;
+}
+
+/* submit button code  */
+.btn
+{
+    width: calc(100% - 4rem);
+    padding: 1rem 1rem;
+    background-color:#00545d;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.4rem;
+    font-weight:1000;
+    border: none;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    margin-left: 2.5rem;
+    box-shadow: 0 0.5rem  1rem;
+}
+.btn:hover
+{
+    background-color:transparent;
+}
+/* animation image code */
+
+.bubbles img{
+    width: 3rem;
+    animation: bubble 10s linear infinite;
+    overflow: auto;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+/* animation code */
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    width: 10px;
+    animation-delay: 7s;
+}
+.bubbles img:nth-child(2){
+    width: 15px;
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(3){
+    width: 30px;
+    animation-delay: 2s;
+}.bubbles img:nth-child(4){
+    width: 20px;
+    animation-delay: 3s;
+}.bubbles img:nth-child(5){
+    width: 4opx;
+    animation-delay: 2s;
+}.bubbles img:nth-child(6){
+    width: 10px;
+    animation-delay: 4s;
+}.bubbles img:nth-child(7){
+    width: 35px;
+    animation-delay: 7s;
+}
+.bubbles img:nth-child(8){
+    width: 45px;
+    animation-delay: 7s;
+}
+.bubbles img:nth-child(9){
+    width: 25px;
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(10){
+    width: 35px;
+    animation-delay: 2s;
+}.bubbles img:nth-child(11){
+    animation-delay: 3s;
+}.bubbles img:nth-child(12){
+    width: 15px;
+    animation-delay: 2s;
+}.bubbles img:nth-child(13){
+    width: 15px;
+    animation-delay: 4s;
+}.bubbles img:nth-child(14){
+    animation-delay: 7s;
+}
+
+/* responsive code */
+
+@media(max-width:768px)
+{
+    html {
+        font-size: 70%;
+    }
+}
+@media(max-width:350px)
+{
+    html {
+        font-size: 50%;
+    }
+}
